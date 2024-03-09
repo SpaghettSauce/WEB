@@ -231,8 +231,10 @@ $complexArr =  [[1, 2, 3], [4, 5], [6]];
 function sumOfArr($complex)
 {
     $sum = 0;
-    foreach ($complex as $simple) {
-        foreach ($simple as $value) {
+    foreach ($complex as $simple) 
+    {
+        foreach ($simple as $value) 
+        {
             $sum += $value;
         }
     }
@@ -245,7 +247,8 @@ echo "сумма двумерного массива: ". sumOfArr($complexArr). 
 function complexArrCreate($number)
 {
     $count = 1;
-    for ($i = 0; $count < $number; $i++) {
+    for ($i = 0; $count < $number; $i++) 
+    {
         echo "[";
         for ($j = 0; $j < 3; $j++)
         {
@@ -279,3 +282,41 @@ echo end($array). "\n";
 echo $array[count($array)-2]. "\n";
 
 //18
+
+function compareToTen($num1, $num2) 
+{
+    return ($num1 + $num2) > 10;
+}
+print_r(compareToTen(24, 12)). "\n";
+print_r(compareToTen(3, 2)). "\n";
+
+function equals($num1, $num2) 
+{
+    return $num1 === $num2;
+}
+print_r(equals(5, 5)). "\n";
+print_r(equals(1, 11)). "\n"; 
+
+$test = 0; 
+echo $test == 0 ? ' верно' : '';
+echo "\n";
+
+
+$age = 25; 
+if ($age < 10 || $age > 99) 
+{
+    echo 'Число меньше 10 или больше 99';
+} 
+else 
+{
+    $sum = array_sum(str_split((string)$age));
+    echo $sum < 10 ? 'Сумма цифр однозначна' : 'Сумма цифр двузначна';
+}
+echo "\n";
+
+
+$arr = [2, 4, 7]; 
+if (count($arr) === 3) 
+{
+    echo "сумма элементов массива: ". array_sum($arr). "\n";
+}
