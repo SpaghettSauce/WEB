@@ -327,3 +327,30 @@ echo "\n\n";
 for ($i = 1; $i <= 20; $i++) {
     echo str_repeat('x', $i) . "\n";
 }
+
+//20
+
+$numbers = [1, 2, 3, 4, 5];
+$average = array_sum($numbers) / count($numbers);
+echo "Среднее арифметическое элементов массива :". $average . "\n";
+
+$sum = array_sum(range(1, 100));
+echo "Сумма чисел от 1 до 100: ". $sum ."\n" ;
+
+
+$numbers = [4, 7, 124, 41, 5];
+$square = array_map('sqrt', $numbers);
+echo "Массив квадратных корней: ";
+print_r($square);
+echo "\n";
+
+$alphabet = range('a', 'z');
+$numbers = range(1, 26);
+$combine = array_combine($alphabet, $numbers);
+echo "Массив с ключами алфавита: ";
+print_r($combine);
+echo "\n";
+
+$str = '1234567890';
+$sumPairs = (int)($str[0].$str[1]) + (int)($str[2].$str[3]) + (int)($str[4].$str[5]) + (int)($str[6].$str[7]) + (int)($str[8].$str[9]);
+echo "Сумма пар чисел: ". $sumPairs . "\n";
