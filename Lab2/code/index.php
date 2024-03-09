@@ -136,3 +136,12 @@ foreach ($arrSum as $value)
 }
 
 //15
+
+function printStringReturnNumber()
+{
+    echo "poggers ". "\n";
+    return 12345;
+}
+$my_num = printStringReturnNumber();
+echo $my_num . "\n";
+
