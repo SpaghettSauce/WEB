@@ -200,4 +200,82 @@ function sumDig($num)
 echo "\n"."сумма цифр через функцию: ". sumDig(75754836) . "\n";
 echo "сумма цифр через функцию: ". sumDig(134) . "\n";
 
+//17
 
+$newNarray = [];
+for ($i = 1; $i <= 3; $i++)
+{
+    $NewNarray[] = str_repeat('x', $i);
+}
+foreach ($NewNarray as $value)
+{
+    echo "\n". $value;
+}
+
+function arrayFill($string, $number)
+{
+    $arr = [];
+    for ($i = 1; $i <= $number; $i++)
+    {
+        $arr[$i] = str_repeat($string, $i);
+    }
+    return $arr;
+}
+echo "\n\n";
+foreach (arrayFill("x", 10) as $value)
+{
+    echo $value. "\n";
+}
+
+$complexArr =  [[1, 2, 3], [4, 5], [6]];
+function sumOfArr($complex)
+{
+    $sum = 0;
+    foreach ($complex as $simple) {
+        foreach ($simple as $value) {
+            $sum += $value;
+        }
+    }
+    return $sum;
+}
+
+
+echo "сумма двумерного массива: ". sumOfArr($complexArr). "\n";
+
+function complexArrCreate($number)
+{
+    $count = 1;
+    for ($i = 0; $count < $number; $i++) {
+        echo "[";
+        for ($j = 0; $j < 3; $j++)
+        {
+            $simple[$j] = $count;
+            $count += 1;
+            echo $simple[$j], " ";
+        }
+        $complex[$i] = $simple;
+        echo "] ";
+    }
+
+    return $complex;
+}
+complexArrCreate(10);
+echo "\n";
+
+
+$array = [2, 5, 3, 9];
+$result = $array[0] * $array[1] + $array[2] * $array[3];
+echo "сумма произведения 1 и 2, 3 и 4 элементов ". $result . "\n";
+
+$user = ["name" => "Даня", "surname" => "Ходосевич", "patronymic" => "Андреевич"];
+echo  $user["name"], " ", $user["surname"], " ", $user["patronymic"] . "\n";
+
+$date = ["year" => "2024", "month" => "03", "day" => "09"];
+echo $date["year"], " ", $date["month"], " ", $date["day"] . "\n";
+
+$array = ['a', 'b', 'c', 'd', 'e'];
+echo "количество символов в массиве ". count($array). "\n";
+echo end($array). "\n";
+echo $array[count($array)-2]. "\n";
+
+//18
