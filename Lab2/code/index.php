@@ -139,9 +139,65 @@ foreach ($arrSum as $value)
 
 function printStringReturnNumber()
 {
-    echo "poggers ". "\n";
+    echo "poggers ". " ";
     return 12345;
 }
 $my_num = printStringReturnNumber();
-echo $my_num . "\n";
+echo  $my_num ."  вывод 1 функции ". "\n\n";
+
+//16
+
+function increaseEnthusiasm($strin)
+{
+    echo $strin . "!" ;
+}
+$inputString = "Salt";
+echo "  вывод 2 функции ". increaseEnthusiasm($inputString) . "\n";
+
+function repeatThreeTimes($string)
+{
+    echo $string . " " . $string . " " . $string;
+}
+echo "  вывод 3 функции ". repeatThreeTimes($inputString). "\n";
+echo  "  вывод 2 и 3 функции ".increaseEnthusiasm(repeatThreeTimes($inputString)) . "\n";
+
+function cut($anthrStr, $howMany)
+{
+    return substr($anthrStr, 0, $howMany);
+}
+echo "сокращённая строка: " . cut ($inputString, 10) . "\n";
+
+function Recurs($arr, $i = 3)
+{
+    if($i < count($arr))
+    {
+        echo "$arr[$i] ";
+        Recurs($arr, $i + 1);
+    } 
+}
+$arr = [65,4124,64,11,99,532,8];
+echo "последние элементы массива через рекурсию : ";
+Recurs($arr). "\n";
+
+function sumDig($num)
+{
+    $sum = 0;
+    while($num > 0)
+    {
+        $sum += $num % 10;
+        $num  = floor($num / 10);
+    }
+    if ($sum > 9)
+    {
+        return sumDig($sum);
+    }
+    else 
+    {
+        return $sum;
+    }
+}
+
+echo "\n"."сумма цифр через функцию: ". sumDig(75754836) . "\n";
+echo "сумма цифр через функцию: ". sumDig(134) . "\n";
+
 
