@@ -19,16 +19,16 @@ echo "\nYour order is:$very_bad_unclear_name.";
 //2
 echo "\n\n";
 $number = 1;
-echo "целое число ".$number. "\n";
+echo "целое число $number \n";
 
 $floatNumber = 5.3;
-echo "число float ".$floatNumber."\n";
+echo "число float $floatNumber \n";
 
-echo "12: ".$number +11 . "\n";
+echo "12:". $number +11 . "\n";
 
 $last_month = 1187.23;
 $this_month = 1089.98;
-echo "Потратил на ".$last_month - $this_month. " больше \n\n";
+echo "Потратил на $last_month - $this_month больше \n\n";
 
 //11
 
@@ -36,7 +36,7 @@ $num_languages = 4;
 $months = 11;
 $days = $months * 16;
 $days_per_language = $days / $num_languages;
-echo "Мэг потратила ". $days_per_language . "дней на изучения языка \n\n";
+echo "Мэг потратила $days_per_language дней на изучения языка \n\n";
 
 //12
 
@@ -51,28 +51,28 @@ $answer *= 2;
 $answer -= 2;
 $answer /= 2;
 $answer -= $my_num;
-echo "125 после действий: ". $answer ."\n\n" ;
+echo "125 после действий: $answer \n\n" ;
 
 
 //14
 
 $a = 10;
 $b = 3;
-echo "а на б делится с остатком: ". $a % $b. "\n";
-if ($a % $b == 0) echo "Делится". $a / $b. "\n";
-else echo "Делится с остатком ". $a % $b. "\n";
+echo "а на б делится с остатком: $a % $b \n";
+if ($a % $b == 0) echo "Делится $a / $b  \n";
+else echo "Делится с остатком  $a % $b. \n";
 
 $st = pow(2,10);
-echo "2 в 10 степени: ". $st. "\n";
+echo "2 в 10 степени:  $st \n";
 $sqr = sqrt(245);
-echo "корень из 245: ". $sqr ."\n";
+echo "корень из 245:  $sqr \n";
 $arr = [4,2,5,19,13,0,10];
 $sumArr = 0;
 foreach ($arr as $value)
 {
     $sumArr += $value**2;
 }
-echo "корень из суммы квадрат элементов массива: ". sqrt($sumArr). "\n";
+echo "корень из суммы квадрат элементов массива: ". sqrt($sumArr) ."\n";
 
 $sqr1 = sqrt(379);
 echo "округляем до целых ". round($sqr1,0). "\n";
@@ -118,7 +118,7 @@ for ($i =1; $i <=$del; $i++)
         array_push($arrDel, $i);
     }
 }
-echo "делители " . $del . "\n";
+echo "делители  $del \n";
 print_r($arrDel). "\n";
 
 $arrSum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -130,7 +130,7 @@ foreach ($arrSum as $value)
     $sumNum += $value;
     if ($sumNum > 10)
     {
-        echo "нужно сложить первые  ". $count. "\n";
+        echo "нужно сложить первые  $count \n";
         break;
     }
 }
@@ -143,7 +143,7 @@ function printStringReturnNumber()
     return 12345;
 }
 $my_num = printStringReturnNumber();
-echo  $my_num ."  вывод 1 функции ". "\n\n";
+echo  "$my_num  вывод 1 функции \n\n";
 
 //16
 
@@ -209,7 +209,7 @@ for ($i = 1; $i <= 3; $i++)
 }
 foreach ($NewNarray as $value)
 {
-    echo "\n". $value;
+    echo "\n  $value ";
 }
 
 function arrayFill($string, $number)
@@ -224,7 +224,7 @@ function arrayFill($string, $number)
 echo "\n\n";
 foreach (arrayFill("x", 10) as $value)
 {
-    echo $value. "\n";
+    echo "$value \n";
 }
 
 $complexArr =  [[1, 2, 3], [4, 5], [6]];
@@ -268,7 +268,7 @@ echo "\n";
 
 $array = [2, 5, 3, 9];
 $result = $array[0] * $array[1] + $array[2] * $array[3];
-echo "сумма произведения 1 и 2, 3 и 4 элементов ". $result . "\n";
+echo "сумма произведения 1 и 2, 3 и 4 элементов  $result \n";
 
 $user = ["name" => "Даня", "surname" => "Ходосевич", "patronymic" => "Андреевич"];
 echo  $user["name"], " ", $user["surname"], " ", $user["patronymic"] . "\n";
@@ -292,7 +292,7 @@ print_r(compareToTen(3, 2)). "\n";
 
 function equals($num1, $num2) 
 {
-    return $num1 === $num2;
+    return $num1 == $num2;
 }
 print_r(equals(5, 5)). "\n";
 print_r(equals(1, 11)). "\n"; 
@@ -316,7 +316,7 @@ echo "\n";
 
 
 $arr = [2, 4, 7]; 
-if (count($arr) === 3) 
+if (count($arr) == 3) 
 {
     echo "сумма элементов массива: ". array_sum($arr). "\n";
 }
@@ -332,10 +332,10 @@ for ($i = 1; $i <= 20; $i++) {
 
 $numbers = [1, 2, 3, 4, 5];
 $average = array_sum($numbers) / count($numbers);
-echo "Среднее арифметическое элементов массива :". $average . "\n";
+echo "Среднее арифметическое элементов массива : $average \n";
 
 $sum = array_sum(range(1, 100));
-echo "Сумма чисел от 1 до 100: ". $sum ."\n" ;
+echo "Сумма чисел от 1 до 100:  $sum \n" ;
 
 
 $numbers = [4, 7, 124, 41, 5];
@@ -353,4 +353,4 @@ echo "\n";
 
 $str = '1234567890';
 $sumPairs = (int)($str[0].$str[1]) + (int)($str[2].$str[3]) + (int)($str[4].$str[5]) + (int)($str[6].$str[7]) + (int)($str[8].$str[9]);
-echo "Сумма пар чисел: ". $sumPairs . "\n";
+echo "Сумма пар чисел: $sumPairs \n";
