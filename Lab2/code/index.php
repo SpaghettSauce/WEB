@@ -320,3 +320,10 @@ if (count($arr) === 3)
 {
     echo "сумма элементов массива: ". array_sum($arr). "\n";
 }
+echo "\n\n";
+
+//19
+
+for ($i = 1; $i <= 20; $i++) {
+    echo str_repeat('x', $i) . "\n";
+}
