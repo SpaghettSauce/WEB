@@ -9,3 +9,10 @@ echo preg_replace('#a.b#','',$str);
 echo (" <--строки начинающиеся на а и заканчивающиеся на b с двумя символами между ними \n\n");
 
 //1.2
+
+$string = 'a1b2c3';
+$result = preg_replace_callback('/\d+/', function($matches) {
+    return pow($matches[0], 3);
+}, $string);
+
+echo $result; 
