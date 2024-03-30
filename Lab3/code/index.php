@@ -1,14 +1,14 @@
 <?php
 //header('Content-type: text/plain');
 
-//1.1
+//1.a
 
 $str = 'ahb acb aeb aeeb adcb axeb';
 echo("$str <br />");
 echo preg_replace('#a.b#','',$str);
 echo ("  <--строки начинающиеся на а и заканчивающиеся на b с двумя символами между ними <br />");
 
-//1.2
+//1.b
 
 $string = 'a1b2c3';
 $result = preg_replace_callback('/\d+/', function($matches) {
@@ -17,7 +17,7 @@ $result = preg_replace_callback('/\d+/', function($matches) {
 
 echo $result; 
 
-//2.1
+//2.a
 
 ?>
 
@@ -53,6 +53,6 @@ echo $result;
 <body>
     <form method='post'>
         
-    <a href="Task2b.php">Task 2.</a>
+    <a href="task2b.php">Task2b.</a>
     </form>
 </body>

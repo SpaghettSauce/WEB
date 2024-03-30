@@ -15,3 +15,7 @@ $age = $_SESSION['age'];
 echo 'Имя: ' . $name . '<br /> Фамилия: ' . $surname . '<br /> Возраст: ' . $age . '<br />';
 ?>
 <!DOCTYPE html>
+
+<p>
+  <a href="Task2c.php">Task2c</a>.
+</p>

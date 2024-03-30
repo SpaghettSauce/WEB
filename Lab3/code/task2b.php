@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Task 2_2</title>
+    <title>Task 2b</title>
 </head>
 <body>
     <form action="/Task2bSession.php" method="post">
