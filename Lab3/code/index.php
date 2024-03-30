@@ -31,7 +31,7 @@ echo $result;
         <br>
         <textarea name='inputText' rows='7' cols='70'></textarea>
         <br><br>
-        <button type='submit' name='submit'>Посчитть</button>
+        <button type='submit' name='submit'>Посчитать</button>
     </form>
 </body>
 

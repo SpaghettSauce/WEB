@@ -26,3 +26,6 @@ echo '</ul>';
 ?>
 
 <!DOCTYPE html>
+<p>
+  <a href="task3.php">Task 2c</a>.
+</p>
