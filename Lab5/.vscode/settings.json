@@ -1,0 +1,49 @@
+{
+    "dataworkspace.excludedProjects": [
+        "Mysql/Mysql.sqlproj"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 6603,
+            "driver": "MySQL",
+            "name": "mysql",
+            "database": "localhost",
+            "username": "root",
+            "password": "helloworld"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 6603,
+            "driver": "MySQL",
+            "name": "localhost",
+            "username": "root",
+            "database": "newstuff",
+            "password": "helloworld"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 6603,
+            "driver": "MySQL",
+            "username": "root",
+            "name": "MySQL - @localhost",
+            "database": "MySQL - @localhost",
+            "password": "helloworld"
+        }
+    ]
+}
